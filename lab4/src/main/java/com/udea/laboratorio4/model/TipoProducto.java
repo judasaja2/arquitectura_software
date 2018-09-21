@@ -95,7 +95,7 @@ public class TipoProducto implements Serializable {
 
     @Override
     public String toString() {
-        return "TipoProducto{" + " id=" + id + ", tipoProducto=" + tipoProducto + '}';
+        return id + " -- " + tipoProducto;
     }
 
 }
