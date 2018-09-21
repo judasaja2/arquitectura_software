@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="com.udea.laboratorio4.model" v="4.4" rws="_15375506012419" Pws="_15375506012419" cws="_15375506012419" persistenceUnitName="com.udea_Laboratorio4_war_1.0-SNAPSHOTPU" sm="false" xs="false" id="_15375506012418" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity compositePrimaryKeyClass="TipoProductoPK" abs="false" class="TipoProducto" v="true" xre="false" m="false" rootElement="_15375506012418" id="_1537550718180">
+        <jpa:ts e="true">
+            <jpa:a>_153755071818210</jpa:a>
+            <jpa:a>_153755083661914</jpa:a>
+        </jpa:ts>
+        <jpa:hc e="true">
+            <jpa:a>_153755071818210</jpa:a>
+        </jpa:hc>
+        <jpa:eq e="true">
+            <jpa:a>_153755071818210</jpa:a>
+        </jpa:eq>
+        <jpa:con am="PUBLIC" e="true">
+            <jpa:a>_153755071818210</jpa:a>
+            <jpa:a>_153755083661914</jpa:a>
+        </jpa:con>
+        <jpa:con am="PUBLIC" e="true"/>
+        <jpa:ath>paralelos</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="tipoProducto" ft="false" id="_153755083661914">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+                <jpa:column unique="false" nullable="false" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:one-to-many orp="false" collection-type="java.util.List" cit="java.util.ArrayList" connected-entity-id="_1537550730852" connected-attribute-id="_153755230908420" v="true" xvt="" name="productos" id="_153755230908721">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" ui="false" ft="false" id="_153755071818210">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+                <jpa:bv>
+                    <jpa:nn m="El valor es obligatorio."/>
+                </jpa:bv>
+                <jpa:column name="id" unique="true" nullable="false" insertable="true" updatable="true"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="true" name="TipoProducto.findAll">
+            <jpa:query>Select e from TipoProducto e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="TipoProducto.findByTipoProducto">
+            <jpa:query>Select e from TipoProducto e where e.tipoProducto=:tipoProducto</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="ProductoPK" abs="false" class="Producto" v="true" xre="false" m="false" rootElement="_15375506012418" id="_1537550730852">
+        <jpa:ts e="true">
+            <jpa:a>_153755073085212</jpa:a>
+            <jpa:a>_153755088973015</jpa:a>
+            <jpa:a>_153755089009016</jpa:a>
+            <jpa:a>_153755089052217</jpa:a>
+            <jpa:a>_153755089105018</jpa:a>
+            <jpa:a>_153755089154619</jpa:a>
+            <jpa:a>_153755230908420</jpa:a>
+        </jpa:ts>
+        <jpa:hc e="true">
+            <jpa:a>_153755073085212</jpa:a>
+        </jpa:hc>
+        <jpa:eq e="true">
+            <jpa:a>_153755073085212</jpa:a>
+        </jpa:eq>
+        <jpa:con am="PUBLIC" e="true">
+            <jpa:a>_153755073085212</jpa:a>
+            <jpa:a>_153755088973015</jpa:a>
+            <jpa:a>_153755089009016</jpa:a>
+            <jpa:a>_153755089052217</jpa:a>
+            <jpa:a>_153755089105018</jpa:a>
+            <jpa:a>_153755089154619</jpa:a>
+            <jpa:a>_153755230908420</jpa:a>
+        </jpa:con>
+        <jpa:con am="PUBLIC" e="true"/>
+        <jpa:con am="PUBLIC" e="true">
+            <jpa:a>_153755073085212</jpa:a>
+            <jpa:a>_153755088973015</jpa:a>
+            <jpa:a>_153755089009016</jpa:a>
+            <jpa:a>_153755089052217</jpa:a>
+            <jpa:a>_153755089105018</jpa:a>
+            <jpa:a>_153755089154619</jpa:a>
+        </jpa:con>
+        <jpa:ath>paralelos</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="nombre" ft="false" id="_153755088973015">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+                <jpa:column name="nombre" unique="false" nullable="false" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="double" v="true" xvt="" name="precio" ft="false" id="_153755089009016">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+                <jpa:column name="precio" unique="false" nullable="false" insertable="true" updatable="true" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="int" v="true" xvt="" name="cantidadDisponible" ft="false" id="_153755089052217">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+                <jpa:bv>
+                    <jpa:nn m="Debe ingresar el valor."/>
+                </jpa:bv>
+                <jpa:column name="cantidadDisponible" unique="false" nullable="false" insertable="true" updatable="true" precision="0"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" v="true" xvt="" name="fechaIngreso" ft="false" id="_153755089105018">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+                <jpa:bv>
+                    <jpa:nn m="Debe ingresar la fecha"/>
+                </jpa:bv>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="fechaIngreso" unique="false" nullable="false" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="boolean" v="true" xvt="" name="valido" ft="false" id="_153755089154619">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+                <jpa:bv>
+                    <jpa:nn m="No se puede dejar el valor vacío."/>
+                </jpa:bv>
+                <jpa:column unique="false" nullable="false" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="false" connected-entity-id="_1537550718180" connected-attribute-id="_153755230908721" v="true" xvt="" name="tipoProducto" id="_153755230908420">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" ft="false" id="_153755073085212">
+                <jpa:xwm nil="false" req="false"/>
+                <jpa:xm nil="false" req="false"/>
+                <jpa:column name="id" unique="true" nullable="false" insertable="true" updatable="true"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="true" name="Producto.findAll">
+            <jpa:query>Select e from Producto e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="Producto.findByNombre">
+            <jpa:query>Select e from Producto e where e.nombre=:nombre</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="Producto.findByPrecio">
+            <jpa:query>Select e from Producto e where e.precio=:precio</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="Producto.findByCantidadDisponible">
+            <jpa:query>Select e from Producto e where e.cantidadDisponible=:cantidadDisponible</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="Producto.findByFechaIngreso">
+            <jpa:query>Select e from Producto e where e.fechaIngreso=:fechaIngreso</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="Producto.findByValido">
+            <jpa:query>Select e from Producto e where e.valido=:valido</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
+ * This file was generated by the Jeddict
+ */</jpa:snp>
+    <jpa:c>
+        <ct>java.util.List</ct>
+        <ct>java.util.Set</ct>
+        <ct>java.util.Map</ct>
+        <ct>java.util.Collection</ct>
+        <cit>java.util.ArrayList</cit>
+        <cit>java.util.LinkedList</cit>
+        <cit>java.util.HashSet</cit>
+        <cit>java.util.TreeSet</cit>
+        <cit>java.util.HashMap</cit>
+    </jpa:c>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_15375506012419">
+            <i ref="_1537550730852" x="295" y="82"/>
+            <i ref="_1537550718180" x="52" y="76"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>

@@ -1,0 +1,15 @@
+com/udea/laboratorio4/ejb/ProductoFacade.class
+com/udea/laboratorio4/ejb/AbstractFacade.class
+com/udea/laboratorio4/controller/ProductoController$1.class
+com/udea/laboratorio4/controller/TipoProductoController$TipoProductoControllerConverter.class
+com/udea/laboratorio4/model/Producto.class
+com/udea/laboratorio4/controller/TipoProductoController.class
+com/udea/laboratorio4/controller/util/PaginationHelper.class
+com/udea/laboratorio4/controller/ProductoController$ProductoControllerConverter.class
+com/udea/laboratorio4/controller/ProductoController.class
+com/udea/laboratorio4/model/TipoProducto_.class
+com/udea/laboratorio4/model/TipoProducto.class
+com/udea/laboratorio4/model/Producto_.class
+com/udea/laboratorio4/ejb/TipoProductoFacade.class
+com/udea/laboratorio4/controller/util/JsfUtil.class
+com/udea/laboratorio4/controller/TipoProductoController$1.class
